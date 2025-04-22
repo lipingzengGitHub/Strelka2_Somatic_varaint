@@ -29,7 +29,7 @@ cd Strelka2_Somatic_varaint
 3. Run the pipeline:
 nextflow run Strelka2_Somatic_variant.nf -profile docker
 
-🔧 Input Requirements
+🔧 Input Requirements:
 Each patient’s data must be in a separate folder under data/
 
 Each folder must contain these 4 files:
