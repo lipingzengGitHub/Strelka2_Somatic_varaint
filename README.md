@@ -1,10 +1,7 @@
-🧬 Strelka2 Somatic Variant Calling Pipeline
+### Strelka2 Somatic Variant Calling Pipeline
 This pipeline performs somatic variant calling using Strelka2 from tumor-normal paired whole genome sequencing (WGS) data, using Nextflow and Docker for reproducibility and scalability.
 
-Directory Structure
-arduino
-Copy
-Edit
+###Directory Structure
 project/
 ├── Dockerfile
 ├── README.md
@@ -18,7 +15,7 @@ project/
     │   └── normal_R2.fastq.gz
     └── ...
 
-🚀 How to Run
+### How to Run
 1. Install Nextflow:
 curl -s https://get.nextflow.io | bash
 
@@ -29,7 +26,7 @@ cd Strelka2_Somatic_varaint
 3. Run the pipeline:
 nextflow run Strelka2_Somatic_variant.nf -profile docker
 
-🔧 Input Requirements:
+### Input Requirements:
 Each patient’s data must be in a separate folder under data/
 
 Each folder must contain these 4 files:
@@ -38,10 +35,7 @@ tumor_R2.fastq.gz
 normal_R1.fastq.gz
 normal_R2.fastq.gz
 
-📦 Docker
-Dockerfile is included and used by default. You don't need to install Strelka2 or any dependencies.
-
-📤 Output
+### Output
 Results will be saved under results/ folder per sample
 
 Strelka2 output includes:
